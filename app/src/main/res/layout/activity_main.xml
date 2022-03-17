@@ -2,15 +2,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout1ID"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login"
-    android:orientation="vertical"
     android:gravity="center_vertical"
+    android:orientation="vertical"
 
-    >
+    tools:context=".Login">
 
     <EditText
+        android:id="@+id/mailID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="veullez saisir votre Email"
@@ -18,23 +19,26 @@
         android:textSize="22dp" />
 
     <EditText
+        android:id="@+id/passwordID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="veullez saisir votre mot de passe"
         android:textColor="@color/black"
         android:textSize="22dp" />
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
 
         >
+
         <Button
+            android:id="@+id/loginID"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="login"
-            />
+            android:text="login" />
     </LinearLayout>
 
 
