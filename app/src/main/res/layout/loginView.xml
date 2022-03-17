@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/layout1ID"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#009688"
     android:gravity="center_vertical"
-    android:orientation="vertical"
 
+    android:orientation="vertical"
     tools:context=".Login"
-    android:background="@color/cardview_shadow_start_color"
 
     >
 
@@ -17,19 +17,22 @@
         android:id="@+id/mailID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="veullez saisir votre Email"
+        android:autofillHints="emailAddress"
+        android:hint="@string/veullez_saisir_votre_email"
+        android:inputType="text"
         android:textColor="@color/black"
-        android:textSize="22dp"
 
-        />
+        android:textSize="22sp" />
 
     <EditText
         android:id="@+id/passwordID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="veullez saisir votre mot de passe"
+        android:autofillHints="emailAddress"
+        android:hint="@string/veullez_saisir_votre_mot_de_passe"
+        android:inputType="textPassword"
         android:textColor="@color/black"
-        android:textSize="22dp" />
+        android:textSize="22sp" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -43,7 +46,10 @@
             android:id="@+id/loginID"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="login" />
+            android:text="@string/login"
+
+            />
+
     </LinearLayout>
 
 
