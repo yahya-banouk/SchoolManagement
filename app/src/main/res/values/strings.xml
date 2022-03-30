@@ -4,4 +4,6 @@
     <string name="veullez_saisir_votre_mot_de_passe">veullez saisir votre mot de passe</string>
     <string name="login">login</string>
     <string name="singup">singup</string>
+    <string name="logout">logout</string>
+    <string name="s_inscrire">S\'inscrire</string>
 </resources>
